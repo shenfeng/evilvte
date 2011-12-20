@@ -5,7 +5,7 @@ rm -f src/*.o src/custom.h src/evilvte.h src/install.sh src/uninstall.sh
 DO_CAT=cat
 DO_ECHO=echo
 prefix="/usr/local"
-CONF_FILE="src/config.h"
+CONF_FILE="src/config_feng.h"
 
 for opt do
   case "$opt" in
