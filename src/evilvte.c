@@ -2011,7 +2011,7 @@ void add_tab()
 
   gtk_widget_show_all(VTE_HBOX);
 
-  int index = gtk_notebook_append_page(GTK_NOTEBOOK(notebook), VTE_HBOX, VTE_LABEL);
+  int index = gtk_notebook_prepend_page(GTK_NOTEBOOK(notebook), VTE_HBOX, VTE_LABEL);
   g_object_set_data(G_OBJECT(gtk_notebook_get_nth_page(GTK_NOTEBOOK(notebook), index)), "current_tab", term);
 
   g_signal_connect(term->vte, "child-exited", G_CALLBACK(del_tab), (bool*)CLOSE_DIALOG);
